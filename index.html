@@ -1,17 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Jakis przykladowy formmularz</h1>
-    <form class="form">
+    <link href="main.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Jakis przykladowy formmularz</h1>
+      <form class="form">
         <p>
-            <input class="form__item" type="text" id="name" >
+          <label class="label" for="name">Name: </label>
+          <input
+            class="form__item"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="please enter your name"
+          />
         </p>
-    </form>
-</body>
+        <p>
+          <label class="label" for="lastName">Last Name</label>
+          <input
+            class="form__item"
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="please enter your last name"
+          />
+        </p>
+        <fieldset>
+          <legend>A dres</legend>
+          <div class="radio__field">
+            <p>
+              <label class="radio--label"
+                >
+                <input class="radio" type="radio" name="brand" value="adidor" />adidor
+              </label>
+            </p>
+            <p>
+              <label class="radio--label"
+                >
+                <input class="radio" type="radio" name="brand" value="buma" />buma
+              </label>
+            </p>
+            <p>
+              <label class="radio--label"
+                >
+                <input class="radio" type="radio" name="brand" value="kobuty" />kobuty
+              </label>
+            </p>
+          </div>
+        </fieldset>
+        <fieldset>
+            <legend>zestaw</legend>
+            <p class="checkbox--field">
+                <p>
+                    <label class="checkbox--label">
+                        <input class="checkbox" name="zestaw" type="checkbox" value="gora">
+                        góra
+                    </label>
+                </p>
+                <p>
+                    <label class="checkbox--label">
+                        <input class="checkbox" name="zestaw" type="checkbox" value="spodzien">
+                        spodzienie
+                    </label>
+                </p>
+                <p>
+                    <label class="checkbox--label">
+                        <input class="checkbox" name="zestaw" type="checkbox" value="but">
+                        bucisze
+                    </label>
+                </p>
+            </p>
+        </fieldset>
+        <p>
+            <label for="number">numerek</label>
+            <input type="number" id="number" class="form__item" name="number" max="10" />
+        </p>
+        <p>
+            <label for="tel">
+                telepon
+            </label>
+            <input class="form__item" name="tel" id="tel" type="tel" placeholder="telephone number">
+        </p>
+        <p>
+            <label for="email">email</label>
+            <input class="form__item" type="email" name="email" id="email" placeholder="email">
+        </p>
+        <p>
+            <label for="range">
+                range
+            </label>
+            <input type="range" name="range" id="range" class="range--js" min="0" max="100" step="1">
+        </p>
+        <p>
+            <label for="avatar">
+                avatar
+            </label>
+            <input type="file" name="avatar" id="avatar">
+        </p>
+        <p>
+            <label for="pick">pick a pick</label>
+            <select name="cos">
+                <option value="pick-1">jedyneczka</option>
+                <option value="pick-2">dwójeczka</option>
+            </select>
+        </p>
+        <p>
+            <label for="text">pisanki</label>
+            <textarea class="form__item" id="text" name="yourText" >
+
+            </textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" class="submit-button" value="wcisk">
+        </p>
+      </form>
+    </main>
+  </body>
 </html>

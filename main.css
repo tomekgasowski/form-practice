@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(224, 224, 191);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 30vw;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: rgba(61, 61, 199, 0.507);
+}
+
+.form__item {
+    display: block;
+    width: 100%;
+}
+
+.radio {
+    margin-top: 4px;
+}
+
+.checkbox {
+    margin-bottom: 0px;
+}
+
+.checkbox--label {
+    display: flex;
+}
+
+.radio--label {
+
+}
+
+.radio--field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
